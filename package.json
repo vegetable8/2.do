@@ -1,0 +1,22 @@
+{
+  "name": "2.do",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vegetable8/2.do.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vegetable8/2.do/issues"
+  },
+  "homepage": "https://github.com/vegetable8/2.do#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  }
+}
