@@ -18,5 +18,8 @@
   "homepage": "https://github.com/vegetable8/2.do#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.1.3"
   }
 }
