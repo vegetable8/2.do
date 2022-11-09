@@ -6,9 +6,8 @@ const api = axios.create({
  });
 
 
-function makeRequest2() {
+function makeRequest() {
     api.get('/ping').then(response => {
         document.getElementById('response').innerHTML = response.data.ping;
-        console.log(response.data);
     });
 }
