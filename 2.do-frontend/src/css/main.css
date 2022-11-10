@@ -1,0 +1,40 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    background: rgb(255,253,221);
+    background: linear-gradient(90deg, rgba(255,253,221,1) 0%, rgba(188,255,190,1) 100%);}
+
+
+.box {
+    height: auto;
+    width: fit-content;
+    border: 3px;
+    border-color: black;
+    border-radius: 12px;
+    background-color: #fff;
+    border-style: solid;
+    padding: 10px;
+}
+
+/* center box vertically and horizontally */
+.center-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 48px;
+    font-family: Montserrat, sans-serif
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    font-family: Montserrat, sans-serif
+}
+
