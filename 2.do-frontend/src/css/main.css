@@ -3,24 +3,73 @@
 
 body {
     background: rgb(255, 253, 221);
-    background: linear-gradient(90deg, rgba(255, 253, 221, 1) 0%, rgba(188, 255, 190, 1) 100%);
+    background: linear-gradient(90deg, rgb(125, 216, 247) 0%, rgb(255, 188, 248) 100%);
 
     font-family: Montserrat, sans-serif;
     font-size: 24px;
 
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+}
 
-.box {
-    height: auto;
-    width: fit-content;
+li * {
+	float: left;
+}
+
+li,
+h3 {
+	clear: both;
+	list-style: none;
+}
+
+input,
+button {
+	outline: none;
+}
+
+button {
+	background: none;
+	border: 0px;
+	color: #888;
+	font-size: 15px;
+	width: 60px;
+	margin: 10px 0 0;
+	font-family: Lato, sans-serif;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #333;
+}
+
+
+
+
+/*.box {
+    
     border: 3px;
     border-color: black;
     border-radius: 12px;
     background-color: #fff;
     border-style: solid;
     padding: 10px;
+}*/
+.box {
+    height: auto;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
 }
+
 
 /* center box vertically and horizontally */
 .center-center {
@@ -32,6 +81,7 @@ body {
 
 h1 {
     font-size: 64px;
+    
 }
 
 
@@ -43,5 +93,75 @@ h1 {
     border-style: none none solid none;
     padding: 1em;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.696);
     text-align: center;
 }
+
+/* New Task */
+
+label[for='todo-input'] {
+	display: block;
+	margin: 0 0 20px;
+}
+
+input#todo-input {
+	float: left;
+	width: 318px;
+}
+
+
+/* Todo List */
+
+li {
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+li > input[type="checkbox"] {
+	margin: 0 10px;
+	position: relative;
+	top: 15px;
+}
+
+li > label {
+	font-size: 18px;
+	line-height: 40px;
+	width: 237px;
+	padding: 0 0 0 11px;
+}
+
+li > input[type="text"] {
+	width: 226px;
+}
+
+li > .delete:hover {
+	color: #CF2323;
+}
+
+
+/* Completed List */
+
+#completed-tasks label {
+	text-decoration: line-through;
+	color: #888;
+}
+
+
+/* Edit Todo */
+
+ul li input[type=text] {
+	display: none;
+}
+
+ul li.editMode input[type=text] {
+	display: block;
+}
+
+ul li.editMode label {
+	display: none;
+}
+
+
+/* Checkboxes */
+
